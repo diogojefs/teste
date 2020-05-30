@@ -12,11 +12,6 @@ require('./src/config/getEnv')()
 
 const app = express();
 
-
-routes.get('/', function (req, res) {
-    res.render('index', {});
-});
-
 app.use(cors());
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
